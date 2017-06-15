@@ -103,7 +103,7 @@ class ViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
             case .notAuthorized:
                 DispatchQueue.main.async {
                     [unowned self] in
-                    let changePrivacySetting = "AVCam doesn't have permission to use the camera, please change privacy settings"
+                    let changePrivacySetting = "I don't have permission to use the camera, please change privacy settings"
                     let message = NSLocalizedString(changePrivacySetting, comment: "Alert message when the user has denied access to the camera")
                     let alertController = UIAlertController(title: "Shrofile", message: message, preferredStyle: .alert)
                     
